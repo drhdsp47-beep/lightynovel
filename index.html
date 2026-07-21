@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lighty Novel - Premium Anime Chapters</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0b0b0f;
+            --card-bg: #12121a;
+            --neon-blue: #00f0ff;
+            --neon-purple: #bd00ff;
+            --text-color: #e2e8f0;
+        }
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        /* الهيدر الفخم */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 5%;
+            background: rgba(18, 18, 26, 0.8);
+            border-bottom: 2px solid var(--neon-purple);
+            box-shadow: 0 0 15px rgba(189, 0, 255, 0.3);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            backdrop-filter: blur(10px);
+        }
+        .logo {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 24px;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 0 0 10px var(--neon-blue);
+            text-decoration: none;
+        }
+        .logo span { color: var(--neon-purple); text-shadow: 0 0 10px var(--neon-purple); }
+        
+        .kofi-btn {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 600;
+            background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 240, 255, 0.5);
+            transition: 0.3s;
+        }
+        .kofi-btn:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(189, 0, 255, 0.8); }
+        
+        /* قسم الواجهة الترحيبية */
+        .hero {
+            text-align: center;
+            padding: 80px 5%;
+            background: linear-gradient(rgba(11,11,15,0.8), rgba(11,11,15,1)), url('https://unsplash.com') no-repeat center/cover;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+        .hero h1 {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 50px;
+            margin-bottom: 20px;
+            text-shadow: 0 0 20px var(--neon-purple);
+            letter-spacing: 2px;
+        }
+        .hero p { font-size: 18px; color: #a0aec0; max-width: 600px; margin: 0 auto; }
+
+        /* قسم شبكة الفصول (الكروت الفخمة) */
+        .chapters-section { padding: 60px 5%; }
+        .section-title {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 28px;
+            margin-bottom: 40px;
+            border-left: 5px solid var(--neon-blue);
+            padding-left: 15px;
+            text-shadow: 0 0 10px var(--neon-blue);
+        }
+        .chapters-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+        .chapter-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: 0.3s;
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+            display: flex;
+            flex-direction: column;
+        }
+        .chapter-card:hover {
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 20px rgba(0, 240, 255, 0.3);
+            transform: translateY(-5px);
+        }
+        .cover-img { width: 100%; height: 320px; object-fit: cover; }
+        .card-info { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+        .card-info h3 { margin: 0 0 10px 0; font-size: 18px; color: #fff; }
+        .card-info .tags { font-size: 12px; color: var(--neon-purple); font-weight: 600; text-transform: uppercase; margin-bottom: 10px; }
+        .card-info .status { font-size: 12px; padding: 3px 8px; border-radius: 4px; font-weight: 600; display: inline-block; width: fit-content; }
+        .status.free { background: rgba(0, 240, 255, 0.1); color: var(--neon-blue); }
+        .status.paid { background: rgba(189, 0, 255, 0.1); color: var(--neon-purple); }
+
+        /* الفوتر والإيميل */
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #050507;
+            border-top: 1px solid rgba(255,255,255,0.05);
+            font-size: 14px;
+            color: #718096;
+        }
+        footer a { color: var(--neon-blue); text-decoration: none; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="index.html" class="logo">LIGHTY<span>NOVEL</span></a>
+        <a href="https://ko-fi.com/theatomicwriter" target="_blank" class="kofi-btn">☕ Support on Ko-fi</a>
+    </header>
+
+    <section class="hero">
+        <h1>LIGHTY NOVEL</h1>
+        <p>Explore the finest selection of dark, immersive light novel chapters. High-quality translations wrapped in glowing cyber-anime aesthetics.</p>
+    </section>
+
+    <section class="chapters-section">
+        <div class="section-title">All Chapters</div>
+        <div class="chapters-grid">
+
+            <!-- كرت فصل تجريبي مجاني (قم بنسخه لإنشاء كروت أخرى) -->
+            <a href="chapters/chapter-1.html" class="chapter-card">
+                <img src="https://unsplash.com" class="cover-img" alt="Chapter Cover">
+                <div class="card-info">
+                    <div>
+                        <div class="tags">Shadow Monarch</div>
+                        <h3>Chapter 01: The Awakening</h3>
+                    </div>
+                    <span class="status free">FREE</span>
+                </div>
+            </a>
+
+            <!-- كرت فصل تجريبي مدفوع -->
+            <a href="chapters/chapter-2.html" class="chapter-card">
+                <img src="https://unsplash.com" class="cover-img" alt="Chapter Cover">
+                <div class="card-info">
+                    <div>
+                        <div class="tags">Cyberpunk Cultivator</div>
+                        <h3>Chapter 02: Neon Sword Grid</h3>
+                    </div>
+                    <span class="status paid">PREMIUM</span>
+                </div>
+            </a>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 LightyNovel. All Rights Reserved.</p>
+        <p>Contact Author: <a href="mailto:hamzabedjegha@gmail.com">hamzabedjegha@gmail.com</a></p>
+    </footer>
+
+</body>
+</html>
