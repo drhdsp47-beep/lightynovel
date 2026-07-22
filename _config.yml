@@ -1,0 +1,5 @@
+title: Lighty Novel
+description: Web novel blog with Mediavine and Ko-fi
+theme: minima
+plugins:
+  - jekyll-feed
