@@ -1,7 +1,0 @@
-baseURL = 'https://github.io'
-languageCode = 'en'
-title = 'Lighty Novel'
-theme = 'PaperMod'
-
-[params]
-  defaultTheme = "light"
