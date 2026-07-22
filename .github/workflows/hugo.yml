@@ -3,7 +3,7 @@ name: Deploy Hugo site to Pages
 on:
   push:
     branches:
-      - main  # أو master إذا كان هذا اسم فرعك الرئيسي
+      - main  # تأكد أن فرعك الرئيسي اسمه main وليس master
 
 permissions:
   contents: read
@@ -20,10 +20,9 @@ defaults:
 
 jobs:
   build:
-    runs-level: ubuntu-latest
+    runs-on: ubuntu-latest
     env:
       HUGO_VERSION: 0.128.0
-    runs-on: ubuntu-latest
     steps:
       - name: Install Hugo CLI
         run: |
